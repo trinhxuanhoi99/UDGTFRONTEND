@@ -36,6 +36,7 @@ export default {
    */
   plugins: [
     '~/plugins/bootstrap',
+    '~/plugins/fortawesome',
     '~/plugins/axios',
     '~/plugins/mixin',
   ],
@@ -79,7 +80,7 @@ export default {
   build: {},
 
   env: {
-    API_PRODUCTION: '',
-    API_DEVELOPMENT: '',
+    API_PRODUCTION: 'http://linkinben158993-001-site1.ftempurl.com/api',
+    API_DEVELOPMENT: 'http://linkinben158993-001-site1.ftempurl.com/api',
   },
 };
