@@ -1,0 +1,12 @@
+body {
+  background-color: aliceblue;
+}
+
+.taskbar a {
+  display: flex;
+  flex: 1;
+}
+
+p {
+  margin-top: 10px;
+}

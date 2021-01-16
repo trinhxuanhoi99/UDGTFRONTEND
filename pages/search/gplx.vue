@@ -1,0 +1,41 @@
+<template>
+  <div class="contain">
+    <div class="searchGPLX">
+      <form class="form-inline my-2 my-lg-0">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Nhập số GPLX"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success my-2 my-sm-0" type="button">
+          Search
+        </button>
+      </form>
+    </div>
+    <div class="content row">
+      <div class="col-6">
+        <img src="" alt="" />
+      </div>
+      <div class="col-6">
+        <b>Chủ sở hữu: </b><br />
+        <b>Hạng: </b><br />
+        <b>Số GPLX: </b><br />
+        <b>Ngày sinh: </b><br />
+        <b>Nơi cư trú: </b><br />
+        <b>Quốc tịch: </b><br />
+        <b>Ngày trúng tuyển: </b><br />
+        <b>Ngày cấp: </b><br />
+        <b>Ngày hết hạn: </b><br />
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Gplx',
+  layout: 'search',
+};
+</script>
+<style scoped src="./styles/gplx.css"></style>

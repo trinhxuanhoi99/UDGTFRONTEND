@@ -1,0 +1,27 @@
+@use 'sass:map';
+@import '_variables.scss';
+
+@function getScreen($nameScreen) {
+  $screen: map.get($screens, $nameScreen);
+  @return $screen;
+}
+
+@mixin Responsive($canvas) {
+  @if $canvas == getScreen('XS') {
+    @media only screen and (min-width: getScreen('XS')) {
+      @content;
+    }
+  } @else if $canvas == getScreen('SM') {
+    @media only screen and (min-width: getScreen('SM')) {
+      @content;
+    }
+  } @else if $canvas == getScreen('MD') {
+    @media only screen and (min-width: getScreen('MD')) {
+      @content;
+    }
+  } @else if $canvas == getScreen('XL') {
+    @media only screen and (min-width: getScreen('XL')) {
+      @content;
+    }
+  }
+}
